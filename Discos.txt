@@ -1,0 +1,18 @@
+------------------------------------------------
+Código: 
+Disco: The dark side of the moon
+Artista: Pink Floyd
+Canciones: []
+------------------------------------------------
+------------------------------------------------
+Código: 7853-jhasd
+Disco: 1992-2012
+Artista: Los mojarras
+Canciones: [Triciclo Peru]
+------------------------------------------------
+------------------------------------------------
+Código: 78532-kjasd
+Disco: Rock peru
+Artista: Los mojarras
+Canciones: [Mi peru]
+------------------------------------------------

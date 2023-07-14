@@ -1,0 +1,6 @@
+elements\venta.class
+elements\disco.class
+elements\catalogo.class
+elements\artista.class
+com\mycompany\sistemadediscos\SistemaDeDiscos.class
+elements\cancion.class
