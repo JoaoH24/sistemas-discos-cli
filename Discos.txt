@@ -16,3 +16,9 @@ Disco: Rock peru
 Artista: Los mojarras
 Canciones: [Mi peru]
 ------------------------------------------------
+------------------------------------------------
+Código: 4523-asdjlkk
+Disco: lim
+Artista: pepe
+Canciones: [vi]
+------------------------------------------------
