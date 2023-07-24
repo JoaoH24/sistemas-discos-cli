@@ -5,17 +5,27 @@ import elements.cancion;
 import elements.catalogo;
 import elements.disco;
 import elements.export;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class SistemaDeDiscos {
 
     public static void main(String[] args) throws IOException {
+        ObjectInputStream persistentArtista = new ObjectInputStream(new FileInputStream("Artistas.bin"));
+        ObjectInputStream persistentCancion = new ObjectInputStream(new FileInputStream("Canciones.bin"));
+        ObjectInputStream persistentDisco = new ObjectInputStream(new FileInputStream("Discos.bin"));
+        
         
         final int N_ARTISTAS = 2;
         final int N_CANCIONES = 2;
@@ -24,6 +34,26 @@ public class SistemaDeDiscos {
         artista[] listaArtistas = new artista[N_ARTISTAS];
         cancion[] listaCanciones = new cancion[N_CANCIONES];
         disco[] listaDiscos = new disco[N_DISCOS];
+        
+        try {
+            listaArtistas = (artista[]) persistentArtista.readObject();
+            persistentArtista.close();
+        } catch (Exception e) {
+            
+        }
+        try {
+            listaCanciones = (cancion[]) persistentCancion.readObject();
+            persistentCancion.close();
+        } catch (Exception e) {
+            
+        }
+        try {
+            listaDiscos = (disco[]) persistentDisco.readObject();
+            persistentDisco.close();
+        } catch (Exception e) {
+          
+        }
+        
         catalogo discosCatalogo = new catalogo();
         export datos = new export();
         boolean flag = true;
@@ -261,7 +291,7 @@ public class SistemaDeDiscos {
                             int cantidad = sc.nextInt();
                             sc.nextLine();
                             
-                            if(cantidad < discosCatalogo.getStock()){
+                            if(cantidad <= discosCatalogo.getStock()){
                                 discosCatalogo.setStock(discosCatalogo.getStock()-cantidad);
                                 float total = cantidad * discosCatalogo.getPrecio();
                                 System.out.println("------------------------------------------------");
@@ -346,6 +376,23 @@ public class SistemaDeDiscos {
                 System.out.println("Entrada inválida. Introduce un número válido.");
                 sc.nextLine(); // Limpiar el búfer del escáner
             }
+        }
+        
+        try {
+            ObjectOutputStream serialArtistas = new ObjectOutputStream(new FileOutputStream("Artistas.bin"));
+            ObjectOutputStream serialCanciones = new ObjectOutputStream(new FileOutputStream("Canciones.bin"));
+            ObjectOutputStream serialDiscos = new ObjectOutputStream(new FileOutputStream("Discos.bin"));
+            
+            serialArtistas.writeObject(listaArtistas);
+            serialCanciones.writeObject(listaCanciones);
+            serialDiscos.writeObject(listaDiscos);
+            
+            serialArtistas.close();
+            serialCanciones.close();
+            serialDiscos.close();
+            
+        } catch (Exception e) {
+            System.out.println("Algo salio mal :|");
         }
 
         sc.close();

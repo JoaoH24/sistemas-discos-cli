@@ -28,3 +28,9 @@ DNI: 74583216
 Nacionalidad: Cuba
 Discos: [Salsas Bravas, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
+------------------------------------------------
+Nombre: Canserbero
+DNI: 745863214
+Nacionalidad: Venezuela
+Discos: [Vida - Muerte, null, null, null, null, null, null, null, null, null]
+------------------------------------------------

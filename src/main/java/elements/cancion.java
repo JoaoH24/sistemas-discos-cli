@@ -1,10 +1,12 @@
 package elements;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Francis
  */
-public class cancion {
+public class cancion implements Serializable {
     
 // Atributos
     private String nombreArtista;

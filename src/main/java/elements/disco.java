@@ -1,12 +1,13 @@
 package elements;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author Francis
  */
-public class disco {
+public class disco implements Serializable {
 
 // Atributos    
     private String codigoDisco;

@@ -1,10 +1,12 @@
 package elements;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Francis
  */
-public class artista {
+public class artista implements Serializable {
     
 // Atributos
     private String dni;

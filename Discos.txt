@@ -34,3 +34,9 @@ Disco: Salsas Bravas
 Artista: Justo Betancur
 Canciones: [null, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
+------------------------------------------------
+Código: 458632145
+Disco: Vida - Muerte
+Artista: Canserbero
+Canciones: [No Mercy, null, null, null, null, null, null, null, null, null]
+------------------------------------------------
