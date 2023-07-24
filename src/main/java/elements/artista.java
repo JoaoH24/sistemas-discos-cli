@@ -1,8 +1,5 @@
 package elements;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 /**
  *
  * @author Francis
@@ -13,15 +10,15 @@ public class artista {
     private String dni;
     private String nombre;
     private String nacionalidad;
-    private ArrayList <String> discosArtista;
+    private String[] discosArtista;
 
 // Método constructor
     public artista(String dni, String nombre, String nacionalidad) {
         this.dni = dni;
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
-        this.discosArtista = new ArrayList();
-    }
+        this.discosArtista = new String[10];
+        }
 
 // Métodos accesores
     public void setDni(String dni) {
@@ -36,7 +33,7 @@ public class artista {
         this.nacionalidad = nacionalidad;
     }
 
-    public void setDiscosArtista(ArrayList<String> discosArtista) {
+    public void setDiscosArtista(String[] discosArtista) {
         this.discosArtista = discosArtista;
     }
 
@@ -45,25 +42,32 @@ public class artista {
     }
 
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
     public String getNacionalidad() {
         return nacionalidad;
     }
 
-    public ArrayList<String> getDiscosArtista() {
+    public String[] getDiscosArtista() {
         return discosArtista;
     }
+    
 
 // Métodos especiales
-    public ArrayList<String> agregarDisco(ArrayList <disco> nwDisk) {
-        ArrayList <String> discosAutor = new ArrayList();
+    public void agregarDisco(disco[] nwDisk) {
+        if (nwDisk == null) {
+            System.out.println("[!] No se detectaron discos Registrados");
+            return;
+        }
+
+        int contador = 0;
         for (disco iter : nwDisk) {
-            if (iter.getArtistaDisco().equals(getNombre())) {
-                discosAutor.add(iter.getNombreDisco());
+            if (iter != null) {
+                if (iter.getArtistaDisco().equals(getNombre())) {
+                    getDiscosArtista()[contador++] = iter.getNombreDisco();
+                }
             }
         }
-        return discosAutor;
     }
 }

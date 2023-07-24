@@ -9,25 +9,18 @@ import java.util.ArrayList;
 public class catalogo {
 
 // Atributos
-    private ArrayList <String> discos;
+    private String[] discos;
     private float precio;
     private int stock;
     private boolean estado;
 
 // Métodos constructores    
     public catalogo() {
-        this.discos = new ArrayList();
-    }
-
-    public catalogo(float precio, int stock, boolean estado) {
-        this.precio = precio;
-        this.stock = stock;
-        this.estado = estado;
-        this.discos = new ArrayList();
+        this.discos = new String[10];
     }
 
 // Métodos accesores
-    public void setDiscos(ArrayList<String> discos) {
+    public void setDiscos(String[] discos) {
         this.discos = discos;
     }
 
@@ -38,12 +31,12 @@ public class catalogo {
     public void setStock(int stock) {
         this.stock = stock;
     }
-
+    
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
-    public ArrayList<String> getDiscos() {
+    public String[] getDiscos() {
         return discos;
     }
 
@@ -60,9 +53,14 @@ public class catalogo {
     }
 
 // Métodos especiales    
-    public String agregarDiscoCatalogo(ArrayList<disco> diskCatalogo, int selectDisco) {
-        return diskCatalogo.get(selectDisco).getNombreDisco();
+    int contador = 0;
+    public void agregarDiscoCatalogo(String discoSeleccionado) {
+        if(contador>= 0 && contador < getDiscos().length){
+            getDiscos()[contador++] = discoSeleccionado;
+        }
+        else {
+            System.out.println("[!] El catalogo excedio la cantida de discos que puede almacenar");
+        }
     }
-   
 }
 

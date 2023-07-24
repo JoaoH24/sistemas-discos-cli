@@ -1,24 +1,18 @@
 ------------------------------------------------
-Nombre: Jose
-DNI: 78452365
+Nombre: Jose Jose
+DNI: 745862
 Nacionalidad: Peru
-Discos: []
+Discos: [null, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
 ------------------------------------------------
-Nombre: Los mojarras
-DNI: 7845963
-Nacionalidad: Peru
-Discos: [1992-2012, Rock peru]
+Nombre: Justo Betancur
+DNI: 8652364
+Nacionalidad: Cuba
+Discos: [Salsa mix, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
 ------------------------------------------------
-Nombre: jose
-DNI: jaf456a4fd
-Nacionalidad: peru
-Discos: []
-------------------------------------------------
-------------------------------------------------
-Nombre: pepe
-DNI: pepe
-Nacionalidad: lima
-Discos: [lim]
+Nombre: RHCP
+DNI: 74523641
+Nacionalidad: USA
+Discos: [Dosed, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------

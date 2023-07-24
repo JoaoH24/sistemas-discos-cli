@@ -1,24 +1,24 @@
 ------------------------------------------------
-Código: 
-Disco: The dark side of the moon
-Artista: Pink Floyd
-Canciones: []
+Código: 4562-�lgf
+Disco: Salsa mix
+Artista: Justo Betancur
+Canciones: [Pa bravo yo, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
 ------------------------------------------------
-Código: 7853-jhasd
-Disco: 1992-2012
-Artista: Los mojarras
-Canciones: [Triciclo Peru]
+Código: 8546325-asfhjk
+Disco: El recuerdo
+Artista: Jose Jose
+Canciones: [null, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
 ------------------------------------------------
-Código: 78532-kjasd
-Disco: Rock peru
-Artista: Los mojarras
-Canciones: [Mi peru]
+Código: 78456-jklasd
+Disco: Dosed
+Artista: RHCP
+Canciones: [Can't Stop, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
 ------------------------------------------------
-Código: 4523-asdjlkk
-Disco: lim
-Artista: pepe
-Canciones: [vi]
+Código: 643ad-f
+Disco: libe
+Artista: Coldplay
+Canciones: [null, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------

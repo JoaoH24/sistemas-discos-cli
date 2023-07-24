@@ -12,14 +12,14 @@ public class disco {
     private String codigoDisco;
     private String nombreDisco;
     private String artistaDisco;
-    private ArrayList <String> cancionDisco; 
+    private String[] cancionDisco; 
 
 // Método constructor
     public disco(String codigoDisco, String nombreDisco, String artistaDisco) {
         this.codigoDisco = codigoDisco;
         this.nombreDisco = nombreDisco;
         this.artistaDisco = artistaDisco;
-        this.cancionDisco = new ArrayList();
+        this.cancionDisco = new String[10];
     }    
 
 // Métodos accesores
@@ -35,7 +35,7 @@ public class disco {
         this.artistaDisco = artistaDisco;
     }
 
-    public void setCancionDisco(ArrayList <String> cancionDisco) {
+    public void setCancionDisco(String[] cancionDisco) {
         this.cancionDisco = cancionDisco;
     }
 
@@ -51,18 +51,19 @@ public class disco {
         return artistaDisco;
     }
 
-    public ArrayList<String> getCancionDisco() {
+    public String[] getCancionDisco() {
         return cancionDisco;
     }
 
 // Métodos especiales
-    public ArrayList<String> agregarCancion(ArrayList <cancion> nwCancion) {
-        ArrayList <String> cancionesDisco = new ArrayList();
+    public void agregarCancion(cancion[] nwCancion) {
+        int contador = 0;
         for (cancion iter : nwCancion) {
-            if (iter.getNombreDisco().equals(getNombreDisco())) {
-                cancionesDisco.add(iter.getNombreCancion());
+            if(iter != null) {
+                if (iter.getNombreDisco().equals(getNombreDisco())) {
+                    getCancionDisco()[contador++] = iter.getNombreCancion();
+                }
             }
         }
-        return cancionesDisco;
     }
 }

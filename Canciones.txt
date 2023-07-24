@@ -1,28 +1,21 @@
 ------------------------------------------------
-Canción: Vivir
-Artista: Canserbero
-Disco: Vida
-Duración: 2:20
-N°: 1
+Canción: Pa bravo yo
+Artista: Justo Betancur
+Disco: Salsa mix
+Duración: 2:21
+N°: 2
 ------------------------------------------------
 ------------------------------------------------
-Canción: Triciclo Peru
-Artista: Los mojarras
-Disco: 1992-2012
-Duración: 3:35
-N°: 8
+Canción: Can't Stop
+Artista: RHCP
+Disco: Dosed
+Duración: 4:10
+N°: 5
 ------------------------------------------------
 ------------------------------------------------
-Canción: Mi peru
-Artista: Los mojarras
-Disco: Rock peru
-Duración: 3:25
-N°: 4
-------------------------------------------------
-------------------------------------------------
-Canción: vi
-Artista: pepe
-Disco: lim
-Duración: 2:10
-N°: -6
+Canción: Paradise
+Artista: Coldplay
+Disco: Ligths
+Duración: 5:10
+N°: 5
 ------------------------------------------------
