@@ -19,3 +19,17 @@ Disco: Ligths
 Duración: 5:10
 N°: 5
 ------------------------------------------------
+------------------------------------------------
+Canción: Las caras lindas
+Artista: Hector Lavoe
+Disco: Salsas del recuerdo
+Duración: 2:42
+N°: 4
+------------------------------------------------
+------------------------------------------------
+Canción: Pa bravo yo
+Artista: Justo Betancur
+Disco: Justo Betancur
+Duración: 1:58
+N°: 2
+------------------------------------------------

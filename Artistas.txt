@@ -16,3 +16,15 @@ DNI: 74523641
 Nacionalidad: USA
 Discos: [Dosed, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
+------------------------------------------------
+Nombre: Hector Lavoe
+DNI: 74523654
+Nacionalidad: Puerto Rico
+Discos: [Salsas del recuerdo, null, null, null, null, null, null, null, null, null]
+------------------------------------------------
+------------------------------------------------
+Nombre: Justo Betancur
+DNI: 74583216
+Nacionalidad: Cuba
+Discos: [Salsas Bravas, null, null, null, null, null, null, null, null, null]
+------------------------------------------------

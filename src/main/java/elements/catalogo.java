@@ -1,5 +1,6 @@
 package elements;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 /**
@@ -13,6 +14,7 @@ public class catalogo {
     private float precio;
     private int stock;
     private boolean estado;
+    private LocalDateTime fecha;
 
 // Métodos constructores    
     public catalogo() {
@@ -36,6 +38,10 @@ public class catalogo {
         this.estado = estado;
     }
 
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+    
     public String[] getDiscos() {
         return discos;
     }
@@ -50,6 +56,10 @@ public class catalogo {
 
     public boolean isEstado() {
         return estado;
+    }
+
+    public LocalDateTime getFecha() {
+        return fecha;
     }
 
 // Métodos especiales    

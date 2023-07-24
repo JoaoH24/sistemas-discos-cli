@@ -7,6 +7,7 @@ import elements.disco;
 import elements.export;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
@@ -16,9 +17,9 @@ public class SistemaDeDiscos {
 
     public static void main(String[] args) throws IOException {
         
-        final int N_ARTISTAS = 5;
-        final int N_CANCIONES = 50;
-        final int N_DISCOS = 5;
+        final int N_ARTISTAS = 2;
+        final int N_CANCIONES = 2;
+        final int N_DISCOS = 2;
         
         artista[] listaArtistas = new artista[N_ARTISTAS];
         cancion[] listaCanciones = new cancion[N_CANCIONES];
@@ -250,17 +251,28 @@ public class SistemaDeDiscos {
                         System.out.println("Precio del catálogo: " + discosCatalogo.getPrecio());
                         System.out.println("Stock disponible: " + discosCatalogo.getStock());
                         System.out.println("Estado: " + discosCatalogo.isEstado());
+                        discosCatalogo.setFecha(LocalDateTime.now());
+                        System.out.println("Fecha: " + discosCatalogo.getFecha());
 
                         System.out.println("-------------------------------------------");
+                        
+                        if(discosCatalogo.getStock() > 0) {
+                            System.out.print("Ingrese la cantidad de catálogos que desea comprar: ");
+                            int cantidad = sc.nextInt();
+                            sc.nextLine();
+                            
+                            if(cantidad < discosCatalogo.getStock()){
+                                discosCatalogo.setStock(discosCatalogo.getStock()-cantidad);
+                                float total = cantidad * discosCatalogo.getPrecio();
+                                System.out.println("------------------------------------------------");
+                                System.out.println("EL MONTO TOTAL A PAGAR ES: " + total);
+                            }
 
-                        System.out.print("Ingrese la cantidad de catálogos que desea comprar: ");
-                        int cantidad = sc.nextInt();
-                        sc.nextLine();
-                        discosCatalogo.setStock(discosCatalogo.getStock()-cantidad);
-                        float total = cantidad * discosCatalogo.getPrecio();
-
-                        System.out.println("------------------------------------------------");
-                        System.out.println("EL MONTO TOTAL A PAGAR ES: " + total);
+                        }
+                        
+                        else {
+                            System.out.println("Catalogo fuera de stock establecido");
+                        }
                         break;
 
                     case 11:
@@ -312,6 +324,7 @@ public class SistemaDeDiscos {
                             escribirVenta.write("Precio catálogo: " + discosCatalogo.getPrecio() + "\n");
                             escribirVenta.write("Stock disponible: " + discosCatalogo.getStock() + "\n");
                             escribirVenta.write("Estado: " + discosCatalogo.isEstado() + "\n");
+                            escribirVenta.write("Fecha: " + discosCatalogo.getFecha() + "\n");
                             escribirVenta.write("------------------------------------------------\n");
 
                             System.out.println("Los datos se exportaron correctamente");

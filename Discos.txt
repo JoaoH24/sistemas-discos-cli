@@ -22,3 +22,15 @@ Disco: libe
 Artista: Coldplay
 Canciones: [null, null, null, null, null, null, null, null, null, null]
 ------------------------------------------------
+------------------------------------------------
+Código: 7458-kljdas
+Disco: Salsas del recuerdo
+Artista: Hector Lavoe
+Canciones: [Las caras lindas, null, null, null, null, null, null, null, null, null]
+------------------------------------------------
+------------------------------------------------
+Código: 74586-ghdasf
+Disco: Salsas Bravas
+Artista: Justo Betancur
+Canciones: [null, null, null, null, null, null, null, null, null, null]
+------------------------------------------------
